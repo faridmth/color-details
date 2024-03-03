@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.2/tinycolor.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-scheme/1.0.0/color-scheme.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <linkrel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr@1.8.0/dist/pickr.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="clr-picker-cont0" >
+            <div class="clr-picker-cont" >
+                <input type="text" data-coloris class="instance2"  style="display: none;">
+            </div>
+
+        </div>
+        <div class="clrcn-cont">
+            <div class="clrcn">
+                <p class="choosed-color"></p>
+                <p class="color-name"></p>
+            </div>
+        </div>
+        <div class="colors-convert-cont0">
+            <div class="colors-convert-cont">
+                <h3 class="title-box">Color-Conversion</h3>
+                <div class="colors-convert">
+                    <div class="inp">
+                        <p>HEX :</p>
+                        <input type="text"  class="hex-inp" readonly>
+                        <img src="copie.png" alt="" srcset="" class="hex-copy">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="variations-cont">
+        <div class="variations">
+            <h3 class="title-box">Variations</h3>
+            <p class="variations-des">Le but de cette section est de produire avec précision les teintes (blanc pur ajouté) et les nuances (noir pur ajouté) de la couleur que vous avez sélectionnée par incréments de 10 %.</p>
+            <div class="shades-cont">
+                <h3 class="title-box">Ombres</h3>
+                <div class="shades"></div>
+            </div>
+            <div class="tints-cont">
+                <h3 class="title-box">Tints</h3>
+                <div class="tints"></div>
+            </div>
+        </div>    
+    </div>
+    <div class="colors-Combinaisons-cont">
+        <div class="colors-Combinaisons">
+            <div class="colors-Combinaisons-title">
+                <h3>Combinaisons de couleurs</h3>
+                <p>Chaque harmonie a sa propre ambiance. Utilisez les harmonies pour trouver des combinaisons de couleurs qui fonctionnent bien ensemble.</p>
+            </div>
+            <div class="colors-Combinaisons-content">
+                <div class="comb-cont">
+                    <h4>Complément</h4>
+                    <p class="comb-cont-p">Une couleur et son opposé sur la roue des couleurs, +180 degrés de teinte. Contraste élevé.</p>
+                    <div class="pallette-x-cont">
+                        <div class="pallette-x"></div>    
+                    </div>
+                </div>
+                <div class="comb-cont">
+                    <h4>Triadic</h4>
+                    <p class="comb-cont-p">Trois couleurs espacées uniformément le long de la roue des couleurs, chacune à 120 degrés de teinte. Il est préférable de laisser une couleur dominer et d'utiliser les autres comme accents.</p>
+                    <div class="pallette-x-cont">
+                        <div class="pallette-x"></div>    
+                    </div>
+                </div>
+                <div class="comb-cont">
+                    <h4>Monochromatique</h4>
+                    <p class="comb-cont-p">Trois couleurs de même teinte avec des valeurs de luminance de +/-50%. Subtil et raffiné.</p>
+                    <div class="pallette-x-cont">
+                        <div class="pallette-x"></div>    
+                    </div>
+                </div>
+                <div class="comb-cont">
+                    <h4>Split-complementaire</h4>
+                    <p class="comb-cont-p">Une couleur et deux adjacentes à son complément, +/-30 degrés de teinte par rapport à la valeur opposée à la couleur principale. Gras comme un complément droit, mais plus polyvalent.</p>
+                    <div class="pallette-x-cont">
+                        <div class="pallette-x"></div>    
+                    </div>
+                </div>
+                <div class="comb-cont">
+                    <h4>Analogue</h4>
+                    <p class="comb-cont-p">Trois couleurs de même luminance et de même saturation avec des teintes qui sont adjacentes sur la roue chromatique, à 30 degrés d'intervalle. Des transitions douces.</p>
+                    <div class="pallette-x-cont">
+                        <div class="pallette-x"></div>    
+                    </div>
+                </div>
+                <div class="comb-cont">
+                    <h4>Tetradic</h4>
+                    <p class="comb-cont-p">Deux jeux de couleurs complémentaires, séparés par 60 degrés de teinte.</p>
+                    <div class="pallette-x-cont">
+                        <div class="pallette-x"></div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="color-contraste-cont">
+        <div class="color-contraste">
+            <div class="color-contraste-right">
+                <div class="inps-cont">
+                    <div>
+                        <h5>Couleur du texte</h5>
+                        <div class="inp-container">
+                            <input type="text" id="inp1"readonly  >
+                            <div id="btn1">
+                                <div class="picker1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>Couleur de fond</h5>
+                        <div class="inp-container">
+                            <input type="text" id="inp2" readonly> 
+                            <div id="btn2">
+                                <div class="picker2" ></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="contraste-ratio-container">
+                    <h4>Contraste</h4>
+                    <div class="ratio-cont">
+                        <div class="top-part">
+                            <h3 class="ration-resg">4.64</h3>
+                            <div class="note">
+                                <h3 class="ration-des">rr</h3>
+                                <div class="ration-stars">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="texts-ratio">
+                            <div class="small-text">
+                                <p>Petit texte</p>
+                                <div class="small-text-stars"></div>
+                            </div>
+                            <div class="big-text">
+                                <p>Grand texte</p>
+                                <div class="big-text-stars"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="color-gen-cont">
+                        <p class="colors-change">Corrigez les couleurs</p>
+                        <div>
+                            <p class="text-change">Ajuster la couleur du texte</p>
+                            <p class="back-change">Ajuster la couleur d'arrière-plan</p>
+                            <p class="both-change">Ajuster les deux couleurs</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="color-contraste-left">
+                <p>
+                    Tout le monde est un génie. Mais si vous jugez un poisson par sa capacité à grimper à un arbre, il passera toute sa vie à croire qu'il est stupide.
+                    <br> <br>- Albert Einstein
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <h3 class="copy-effect">couleur copié</h3>
+
+    <script type="text/javascript" src="ntc.js"></script>
+    <script src="script.js" type="module"></script>
+    <script src="color-combinations.js"></script>
+    <script src="contraste.js"></script>
+    <script src="copy.js"></script>
+</body>
+</html>
